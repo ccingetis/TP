@@ -2,8 +2,10 @@ name: CI - Vérification HTML
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "dev" ]
   pull_request:
+    branches: [ "dev" ]
+  merge:
     branches: [ "main" ]
   jobs:
     test-html:
@@ -14,4 +16,4 @@ on:
         - name: Vérification syntaxe HTML
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
-mkdir: cannot create directory ‘.github/workflows’: Aucun fichier ou dossier de ce nom
+          root: .
