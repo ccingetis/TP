@@ -2,9 +2,9 @@ name: CI - Vérification HTML
 
 on:
   push:
-    branches: [ "dev" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "dev" ]
+    branches: [ "main" ]
   jobs:
     test-html:
       runs-on: ubuntu-latest
